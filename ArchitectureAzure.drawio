@@ -333,7 +333,7 @@
           <mxGeometry x="145" y="651" width="5" height="109" as="geometry" />
         </mxCell>
         <mxCell id="nAowUgFZZCZa8e_7j0hr-557" value="DASHBOARDS &amp;amp;&amp;nbsp;&lt;div&gt;VISUALIZATIONS&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=top;shadow=0;dashed=0;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontStyle=1;fontSize=16;spacingLeft=5;" vertex="1" parent="nAowUgFZZCZa8e_7j0hr-587">
-          <mxGeometry x="1073.5" y="1" width="120" height="30" as="geometry" />
+          <mxGeometry x="1113.5" y="1" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="nAowUgFZZCZa8e_7j0hr-558" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="nAowUgFZZCZa8e_7j0hr-587">
           <mxGeometry x="1094" y="597.5" width="65" height="60" as="geometry" />
