@@ -1,20 +1,14 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="Page-1" id="lnHRh4_X06ve5YQdp1e1">
-    <mxGraphModel dx="983" dy="688" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1123" dy="786" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="dTgFdFP_G05tZDvAJm69-13" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-10">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="415" y="194" />
-              <mxPoint x="415" y="194" />
-            </Array>
-            <mxPoint x="414" y="269.0833206176758" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-8" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-10">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Super Admin - Home&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="354" y="114" as="geometry" />
+          <mxGeometry height="60" width="120" x="54" y="104" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Overall Architecture&lt;/h1&gt;" vertex="1">
           <mxGeometry height="120" width="425" x="230" y="13" as="geometry" />
@@ -25,57 +19,72 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Scheduler&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="354" y="380" as="geometry" />
+          <mxGeometry height="60" width="120" x="453" y="116" as="geometry" />
         </mxCell>
-        <mxCell id="dTgFdFP_G05tZDvAJm69-14" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="414" y="352" />
-              <mxPoint x="414" y="352" />
-            </Array>
-            <mxPoint x="415.4999999999998" y="418.25" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-9" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Creates Patterns every biweekly or or for a period with recurring." vertex="1">
-          <mxGeometry height="74" width="109" x="360" y="230" as="geometry" />
+          <mxGeometry height="74" width="109" x="266" y="102" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-19" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Assign Lines to Staffs" vertex="1">
-          <mxGeometry height="60" width="111" x="358" y="512" as="geometry" />
+          <mxGeometry height="60" width="111" x="457.5" y="265" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-22" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-18" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="If Someone&lt;div&gt;Call Ins/ Vacation&lt;/div&gt;" vertex="1">
-          <mxGeometry height="116" width="104" x="358" y="641" as="geometry" />
+          <mxGeometry height="116" width="104" x="461" y="404" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-26" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Change status to in call or sth else (Red color)&amp;nbsp;" vertex="1">
-          <mxGeometry height="60" width="120" x="108" y="777" as="geometry" />
+          <mxGeometry height="60" width="120" x="453" y="554" as="geometry" />
         </mxCell>
-        <mxCell id="dTgFdFP_G05tZDvAJm69-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="597" y="931" as="geometry" />
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-15" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dTgFdFP_G05tZDvAJm69-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
-          <mxGeometry height="30" width="60" x="214" y="674" as="geometry" />
-        </mxCell>
-        <mxCell id="dTgFdFP_G05tZDvAJm69-30" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dTgFdFP_G05tZDvAJm69-32">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="146" y="1016" as="targetPoint" />
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-18" connectable="0" parent="uyoc8_9LJ4x2QQrSD5LX-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.1315" as="geometry">
+            <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="If anyone from other lines ready to work for that shift, add assigned status in his line (not on the call in staff)" vertex="1">
-          <mxGeometry height="89" width="120" x="308" y="885" as="geometry" />
+          <mxGeometry height="89" width="120" x="375" y="670" as="geometry" />
         </mxCell>
-        <mxCell id="dTgFdFP_G05tZDvAJm69-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
-          <mxGeometry height="30" width="60" x="203" y="897" as="geometry" />
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-2" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uyoc8_9LJ4x2QQrSD5LX-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-14" connectable="0" parent="uyoc8_9LJ4x2QQrSD5LX-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.0775" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-16" edge="1" parent="1" source="dTgFdFP_G05tZDvAJm69-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="uyoc8_9LJ4x2QQrSD5LX-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="187" y="582" />
+              <mxPoint x="318" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-17" connectable="0" parent="uyoc8_9LJ4x2QQrSD5LX-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.1521" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dTgFdFP_G05tZDvAJm69-32" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="If casual Staff avaibale" vertex="1">
-          <mxGeometry height="80" width="80" x="104" y="1018" as="geometry" />
+          <mxGeometry height="80" width="80" x="147" y="679" as="geometry" />
+        </mxCell>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Assign Sihft" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="419" as="geometry" />
+        </mxCell>
+        <mxCell id="uyoc8_9LJ4x2QQrSD5LX-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Send To Agency" vertex="1">
+          <mxGeometry height="60" width="120" x="258" y="432" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
