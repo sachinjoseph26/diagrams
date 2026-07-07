@@ -29,7 +29,7 @@
           <mxGeometry height="70" width="120" x="932" y="234" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-9" parent="1" style="swimlane;startSize=30;fillColor=#E8F4FD;strokeColor=#232F3E;fontStyle=1;fontSize=13;" value="VPC: traklyn-vpc (10.0.0.0/16)" vertex="1">
-          <mxGeometry height="620" width="1200" x="63" y="576" as="geometry" />
+          <mxGeometry height="703" width="1200" x="66" y="625" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-10" parent="-QuFE4TGrOAFkPqldWl0-9" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_gateway;" value="Internet Gateway" vertex="1">
           <mxGeometry height="50" width="50" x="520" y="50" as="geometry" />
@@ -41,37 +41,37 @@
           <mxGeometry height="50" width="50" x="30" y="70" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-13" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D6EAF8;" value="Public Subnet&#xa;traklyn-public-1b&#xa;10.0.2.0/24 · AZ-B" vertex="1">
-          <mxGeometry height="140" width="280" x="360" y="120" as="geometry" />
+          <mxGeometry height="140" width="280" x="586" y="126" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-14" parent="-QuFE4TGrOAFkPqldWl0-13" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.application_load_balancer;" value="Application Load Balancer&#xa;traklyn-alb&#xa;HTTP :80&#xa;traklyn-alb-sg (80/443)" vertex="1">
           <mxGeometry height="50" width="50" x="100" y="60" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-15" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#FDEBD0;" value="Private App Subnet&#xa;traklyn-app-1a&#xa;10.0.3.0/24 · AZ-A" vertex="1">
-          <mxGeometry height="150" width="280" x="40" y="290" as="geometry" />
+          <mxGeometry height="170" width="280" x="40" y="290" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-16" parent="-QuFE4TGrOAFkPqldWl0-15" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="ECS Fargate Task&#xa;backend :3000&#xa;traklyn-app-sg" vertex="1">
           <mxGeometry height="50" width="50" x="100" y="70" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-17" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#FDEBD0;" value="Private App Subnet&#xa;traklyn-app-1b&#xa;10.0.4.0/24 · AZ-B" vertex="1">
-          <mxGeometry height="150" width="280" x="360" y="290" as="geometry" />
+          <mxGeometry height="150" width="280" x="586" y="320" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-18" parent="-QuFE4TGrOAFkPqldWl0-17" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="ECS Fargate Task&#xa;backend :3000" vertex="1">
           <mxGeometry height="50" width="50" x="100" y="70" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-19" parent="-QuFE4TGrOAFkPqldWl0-9" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="ECS Cluster&#xa;traklyn-cluster&#xa;Task: traklyn-backend-task&#xa;Service: traklyn-backend-service" vertex="1">
-          <mxGeometry height="50" width="50" x="700" y="330" as="geometry" />
+          <mxGeometry height="50" width="50" x="969" y="156" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-20" parent="-QuFE4TGrOAFkPqldWl0-9" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;" value="CloudWatch Logs&#xa;/ecs/traklyn-backend" vertex="1">
-          <mxGeometry height="50" width="50" x="820" y="330" as="geometry" />
+          <mxGeometry height="50" width="50" x="969" y="470" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-21" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D5F5E3;" value="Private DB Subnet&#xa;traklyn-db-1a&#xa;10.0.5.0/24 · AZ-A" vertex="1">
-          <mxGeometry height="130" width="280" x="40" y="470" as="geometry" />
+          <mxGeometry height="191" width="280" x="43" y="497" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-22" parent="-QuFE4TGrOAFkPqldWl0-21" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rds;" value="Amazon RDS MySQL&#xa;traklyn-db&#xa;db.t4g.micro · gp3 20GB&#xa;DB: traklyn · :3306&#xa;traklyn-db-sg" vertex="1">
           <mxGeometry height="50" width="50" x="100" y="60" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-23" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D5F5E3;" value="Private DB Subnet&#xa;traklyn-db-1b&#xa;10.0.6.0/24 · AZ-B" vertex="1">
-          <mxGeometry height="130" width="280" x="360" y="470" as="geometry" />
+          <mxGeometry height="130" width="280" x="586" y="531" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-24" edge="1" parent="-QuFE4TGrOAFkPqldWl0-9" source="-QuFE4TGrOAFkPqldWl0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-16" value="TCP 3000">
           <mxGeometry relative="1" as="geometry" />
@@ -92,7 +92,7 @@
           <mxGeometry height="50" width="50" x="1320" y="300" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-30" parent="1" style="swimlane;startSize=25;fillColor=#FADBD8;" value="us-east-1 (Kiosk Liveness)" vertex="1">
-          <mxGeometry height="120" width="200" x="1531" y="601" as="geometry" />
+          <mxGeometry height="120" width="200" x="1531" y="644" as="geometry" />
         </mxCell>
         <mxCell id="-QuFE4TGrOAFkPqldWl0-31" parent="-QuFE4TGrOAFkPqldWl0-30" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=9;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cognito;" value="Cognito&#xa;Identity Pool" vertex="1">
           <mxGeometry height="45" width="45" x="20" y="40" as="geometry" />
