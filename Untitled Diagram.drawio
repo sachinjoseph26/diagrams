@@ -1,9 +1,141 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="27.0.7">
-  <diagram name="Page-1" id="RhB2wFHEk-8G1qSL48Lc">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36">
+  <diagram name="Traklyn AWS Production" id="RhB2wFHEk-8G1qSL48Lc">
+    <mxGraphModel dx="3306" dy="1658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-1" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;" value="Traklyn Production AWS Architecture (ca-central-1)" vertex="1">
+          <mxGeometry height="40" width="600" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Web Users" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Kiosk Devices" vertex="1">
+          <mxGeometry height="80" width="40" x="180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-4" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.amplify;" value="AWS Amplify&#xa;React SPA&#xa;frontend/dist" vertex="1">
+          <mxGeometry height="60" width="60" x="300" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#24292e;fontColor=#ffffff;" value="GitHub&#xa;traklyn-web-app" vertex="1">
+          <mxGeometry height="50" width="120" x="80" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2088FF;fontColor=#ffffff;" value="GitHub Actions&#xa;staging-deploy.yml" vertex="1">
+          <mxGeometry height="50" width="140" x="230" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-7" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecr;" value="Amazon ECR&#xa;traklyn-backend" vertex="1">
+          <mxGeometry height="60" width="60" x="410" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-8" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;" value="Internet" vertex="1">
+          <mxGeometry height="70" width="120" x="520" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-9" parent="1" style="swimlane;startSize=30;fillColor=#E8F4FD;strokeColor=#232F3E;fontStyle=1;fontSize=13;" value="VPC: traklyn-vpc (10.0.0.0/16)" vertex="1">
+          <mxGeometry height="620" width="1200" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-10" parent="-QuFE4TGrOAFkPqldWl0-9" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_gateway;" value="Internet Gateway" vertex="1">
+          <mxGeometry height="50" width="50" x="520" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-11" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D6EAF8;" value="Public Subnet&#xa;traklyn-public-1a&#xa;10.0.1.0/24 · AZ-A" vertex="1">
+          <mxGeometry height="140" width="280" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-12" parent="-QuFE4TGrOAFkPqldWl0-11" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.nat_gateway;" value="NAT Gateway" vertex="1">
+          <mxGeometry height="50" width="50" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-13" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D6EAF8;" value="Public Subnet&#xa;traklyn-public-1b&#xa;10.0.2.0/24 · AZ-B" vertex="1">
+          <mxGeometry height="140" width="280" x="360" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-14" parent="-QuFE4TGrOAFkPqldWl0-13" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.application_load_balancer;" value="Application Load Balancer&#xa;traklyn-alb&#xa;HTTP :80&#xa;traklyn-alb-sg (80/443)" vertex="1">
+          <mxGeometry height="50" width="50" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-15" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#FDEBD0;" value="Private App Subnet&#xa;traklyn-app-1a&#xa;10.0.3.0/24 · AZ-A" vertex="1">
+          <mxGeometry height="150" width="280" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-16" parent="-QuFE4TGrOAFkPqldWl0-15" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="ECS Fargate Task&#xa;backend :3000&#xa;traklyn-app-sg" vertex="1">
+          <mxGeometry height="50" width="50" x="100" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-17" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#FDEBD0;" value="Private App Subnet&#xa;traklyn-app-1b&#xa;10.0.4.0/24 · AZ-B" vertex="1">
+          <mxGeometry height="150" width="280" x="360" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-18" parent="-QuFE4TGrOAFkPqldWl0-17" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="ECS Fargate Task&#xa;backend :3000" vertex="1">
+          <mxGeometry height="50" width="50" x="100" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-19" parent="-QuFE4TGrOAFkPqldWl0-9" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="ECS Cluster&#xa;traklyn-cluster&#xa;Task: traklyn-backend-task&#xa;Service: traklyn-backend-service" vertex="1">
+          <mxGeometry height="50" width="50" x="700" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-20" parent="-QuFE4TGrOAFkPqldWl0-9" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;" value="CloudWatch Logs&#xa;/ecs/traklyn-backend" vertex="1">
+          <mxGeometry height="50" width="50" x="820" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-21" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D5F5E3;" value="Private DB Subnet&#xa;traklyn-db-1a&#xa;10.0.5.0/24 · AZ-A" vertex="1">
+          <mxGeometry height="130" width="280" x="40" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-22" parent="-QuFE4TGrOAFkPqldWl0-21" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rds;" value="Amazon RDS MySQL&#xa;traklyn-db&#xa;db.t4g.micro · gp3 20GB&#xa;DB: traklyn · :3306&#xa;traklyn-db-sg" vertex="1">
+          <mxGeometry height="50" width="50" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-23" parent="-QuFE4TGrOAFkPqldWl0-9" style="swimlane;startSize=50;fillColor=#D5F5E3;" value="Private DB Subnet&#xa;traklyn-db-1b&#xa;10.0.6.0/24 · AZ-B" vertex="1">
+          <mxGeometry height="130" width="280" x="360" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-24" edge="1" parent="-QuFE4TGrOAFkPqldWl0-9" source="-QuFE4TGrOAFkPqldWl0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-16" value="TCP 3000">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-25" edge="1" parent="-QuFE4TGrOAFkPqldWl0-9" source="-QuFE4TGrOAFkPqldWl0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-22" value="TCP 3306">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-26" edge="1" parent="-QuFE4TGrOAFkPqldWl0-9" source="-QuFE4TGrOAFkPqldWl0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;dashed=1;" target="-QuFE4TGrOAFkPqldWl0-12" value="outbound via NAT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-27" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="Amazon S3&#xa;files &amp; face photos" vertex="1">
+          <mxGeometry height="50" width="50" x="1320" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-28" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#01A88D;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rekognition;" value="Rekognition&#xa;face collections" vertex="1">
+          <mxGeometry height="50" width="50" x="1320" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-29" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=10;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" value="IAM Task Role" vertex="1">
+          <mxGeometry height="50" width="50" x="1320" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-30" parent="1" style="swimlane;startSize=25;fillColor=#FADBD8;" value="us-east-1 (Kiosk Liveness)" vertex="1">
+          <mxGeometry height="120" width="200" x="1320" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-31" parent="-QuFE4TGrOAFkPqldWl0-30" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=9;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cognito;" value="Cognito&#xa;Identity Pool" vertex="1">
+          <mxGeometry height="45" width="45" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-32" parent="-QuFE4TGrOAFkPqldWl0-30" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#01A88D;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=9;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rekognition;" value="Rekognition&#xa;Face Liveness" vertex="1">
+          <mxGeometry height="45" width="45" x="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-33" edge="1" parent="-QuFE4TGrOAFkPqldWl0-30" source="-QuFE4TGrOAFkPqldWl0-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-34" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-35" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-36" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-8" value="HTTPS API">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-37" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-38" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-7" value="docker push">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-39" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-19" value="pull image">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-40" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-41" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-42" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-43" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-QuFE4TGrOAFkPqldWl0-44" edge="1" parent="1" source="-QuFE4TGrOAFkPqldWl0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;" target="-QuFE4TGrOAFkPqldWl0-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
